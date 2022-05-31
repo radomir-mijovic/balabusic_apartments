@@ -1,7 +1,13 @@
-
+import Head from "next/head";
+import React from "react";
 
 export default function Home() {
-  return (
-    <h1>Hello</h1>
-  )
+    return (
+        <>
+            <Head>
+                <title>Apartments Balabusic - Budva</title>
+            </Head>
+            <h1>Hello</h1>
+        </>
+    )
 }
