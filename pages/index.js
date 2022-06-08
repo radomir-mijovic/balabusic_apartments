@@ -7,7 +7,7 @@ export default function Home() {
             <Head>
                 <title>Apartments Balabusic - Budva</title>
             </Head>
-            <h1>Hello</h1>
+
         </>
     )
 }
