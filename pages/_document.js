@@ -17,6 +17,12 @@ class MyDocument extends Document {
                           content='Discover a dreamy spot in the heart of Old
                                    Town Budva and create authentic memories with us. Rakija and Wine bar
                                    - Budva. Rakija i Vino bar - Budva.'/>
+
+                    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+                    <link
+                        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;1,200;1,300&display=swap"
+                        rel="stylesheet"/>
                 </Head>
                 <body>
                 <Main/>
