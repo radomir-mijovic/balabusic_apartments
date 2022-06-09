@@ -7,11 +7,11 @@ const Header = () => {
         <HeaderStyled>
             <div className="header-text-box">
                 <h1>Balabusic Apartments</h1>
-                <h2>amazing apartments for the free spirited traveler</h2>
+                <h2>amazing apartments for<br/> the free spirited traveler</h2>
             </div>
             <div className="header-image-box">
                 <Image
-                    src='/images/room3.jpg'
+                    src='/images/hotel1.jpg'
                     width='500' height='500'
                     objectFit="cover"
                     layout='fill'

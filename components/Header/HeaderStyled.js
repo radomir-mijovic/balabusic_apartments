@@ -6,7 +6,7 @@ export const HeaderStyled = styled.main`
   justify-content: space-around;
   width: 100%;
   height: 50rem;
-  padding: 0 clamp(3rem, 4vw, 15rem);
+  padding: 0 0 0 clamp(3rem, 6vw, 20rem);
   
   .header-text-box {
     display: flex;
@@ -15,15 +15,21 @@ export const HeaderStyled = styled.main`
     justify-content: center;
     background: #F7FAFD;
     padding: 0 3rem;
-    margin: 3rem 0 3rem;
+    margin: 8rem 0 8rem;
+    
+    > h1, h3 {
+      text-align: center;
+    }
     
     > h1 {
       font-size: clamp(3rem, 4vw, 5rem);
+      margin-bottom: 1.7rem;
     }
     
     > h2 {
       text-transform: uppercase;
       font-size: clamp(1.6rem, 2.2vw, 2rem);
+      line-height: 2.2rem;
     }
   }
   
@@ -38,7 +44,7 @@ export const HeaderStyled = styled.main`
     padding: 0;
     
     .header-text-box {
-      margin-bottom: 0;
+      margin: 0;
     }
   }
 `
