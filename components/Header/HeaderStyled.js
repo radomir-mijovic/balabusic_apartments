@@ -17,7 +17,7 @@ export const HeaderStyled = styled.main`
     padding: 0 3rem;
     margin: 8rem 0 8rem;
     
-    > h1, h3 {
+    > h1, h2 {
       text-align: center;
     }
     
@@ -39,7 +39,7 @@ export const HeaderStyled = styled.main`
     width: 100%;
   }
   
-  @media (max-width: 760px) {
+  @media (max-width: 768px) {
     grid-template-columns: 1fr;
     padding: 0;
     

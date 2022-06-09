@@ -21,7 +21,7 @@ export const NavbarStyled = styled.nav`
     font-size: clamp(1.2rem, 2vw, 1.4rem);
   }
   
-  @media(max-width: 760px) {
+  @media(max-width: 768px) {
     
   }
 `
