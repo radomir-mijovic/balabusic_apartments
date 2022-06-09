@@ -6,6 +6,7 @@ export const NavbarStyled = styled.nav`
   justify-content: space-around;
   width: 100%;
   padding: 2rem clamp(1rem, 3vw, 8rem);
+  margin-bottom: clamp(.5rem, 4vw, 7rem);
   
   > h3, h1 {
     font-family: 'Josefin Sans', sans-serif;
@@ -18,5 +19,9 @@ export const NavbarStyled = styled.nav`
   
   h3 {
     font-size: clamp(1.2rem, 2vw, 1.4rem);
+  }
+  
+  @media(max-width: 760px) {
+    
   }
 `
