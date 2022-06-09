@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const NavbarStyled = styled.nav`
-  display: flex;
   align-items: center;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
   width: 100%;
   padding: 2rem clamp(1rem, 3vw, 8rem);
   margin-bottom: clamp(.5rem, 4vw, 7rem);

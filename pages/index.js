@@ -2,6 +2,7 @@ import Head from "next/head";
 import React from "react";
 import Header from "../components/Header/Header";
 import UrbanArea from "../components/UrbanArea/UrbanArea";
+import Apartments from "../components/Apartments/Apartments";
 
 export default function Home() {
     return (
@@ -11,6 +12,7 @@ export default function Home() {
             </Head>
             <Header/>
             <UrbanArea/>
+            <Apartments/>
         </>
     )
 }

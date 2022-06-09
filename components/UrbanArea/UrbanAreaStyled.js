@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 export const UrbanAreaStyled = styled.main`
   width: 100%;
-  height: 30vh;
-  margin-top: 8rem;
+  margin: 8rem 0 5rem 0;
   padding: 0 25vw;
   
   > h2, h4 {
