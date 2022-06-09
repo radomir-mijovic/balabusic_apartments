@@ -23,6 +23,7 @@ class MyDocument extends Document {
                     <link
                         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;1,200;1,300&display=swap"
                         rel="stylesheet"/>
+                    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400&display=swap" rel="stylesheet"/>
                 </Head>
                 <body>
                 <Main/>

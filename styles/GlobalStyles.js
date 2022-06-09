@@ -15,5 +15,6 @@ export const GlobalStyles = createGlobalStyle`
     width: 100%;
     height: 100%;
     -webkit-tap-highlight-color: transparent;
+    font-family: 'Josefin Sans', sans-serif;;
   }
 `
