@@ -11,6 +11,7 @@ export const ApartmentsStyled = styled.main`
     font-size: clamp(2.2rem, 4vw, 3.2rem);
     font-weight: 400;
     text-transform: uppercase;
+    margin-bottom: 2rem;
   }
   
   .boxes-grid {

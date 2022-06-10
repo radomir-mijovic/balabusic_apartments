@@ -30,6 +30,7 @@ export const HeaderStyled = styled.main`
       text-transform: uppercase;
       font-size: clamp(1.6rem, 2.2vw, 2rem);
       line-height: 2.2rem;
+      font-family: 'Cormorant', serif;
     }
   }
   
