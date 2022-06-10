@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
-export const HouseRulesStyled = styled.main`
+export const HouseRulesStyled = styled.section`
   width: 100%;
   height: clamp(30rem, 55vw, 70rem);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 5vw 0 5rem 0;
   
   .main-box {
     position: relative;

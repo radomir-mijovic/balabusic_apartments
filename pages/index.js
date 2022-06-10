@@ -4,6 +4,7 @@ import Header from "../components/Header/Header";
 import UrbanArea from "../components/UrbanArea/UrbanArea";
 import Apartments from "../components/Apartments/Apartments";
 import HouseRules from "../components/HouseRules/HouseRules";
+import IconsSection from "../components/IconsSection/IconsSection";
 
 export default function Home() {
     return (
@@ -14,6 +15,7 @@ export default function Home() {
             <Header/>
             <UrbanArea/>
             <Apartments/>
+            <IconsSection/>
             <HouseRules/>
         </>
     )
