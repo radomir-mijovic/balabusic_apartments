@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ApartmentsStyled = styled.main`
+export const ApartmentsStyled = styled.section`
   width: 100%;
   padding: 0 clamp(1rem, 3vw, 4rem);
   display: flex;

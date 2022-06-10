@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeaderStyled = styled.main`
+export const HeaderStyled = styled.section`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-around;

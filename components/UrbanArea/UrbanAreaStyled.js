@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const UrbanAreaStyled = styled.main`
+export const UrbanAreaStyled = styled.section`
   width: 100%;
   margin: 12rem 0 10rem 0;
   padding: 0 25vw;
