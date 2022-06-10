@@ -17,7 +17,7 @@ export const ApartmentsStyled = styled.main`
   .boxes-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-    grid-gap: 1rem;
+    grid-gap: 4rem 2rem;
   }
   
   .box {

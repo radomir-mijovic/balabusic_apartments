@@ -5,7 +5,8 @@ export const RoomCardStyled = styled.div`
   height: 30rem;
   display: flex;
   flex-direction: column;
-  border-radius: 5px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
   
   .room-image {
     height: 70%;
@@ -49,14 +50,33 @@ export const RoomCardStyled = styled.div`
   
   .room-info {
     display: flex;
-    width: 100%;
+    align-items: center;
+    width: 60%;
     font-size: 1.6rem;
+    height: 2.5rem;
   }
   
-  .icon {
+  .people-info-icon, 
+  .bed-info-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     position: relative;
-    height: 1rem;
-    width: 1rem;
+    height: 100%;
+    width: 100%;
+    padding: 0 0.5rem;
   }
   
+  .people-info-icon {
+    
+  }
+  
+  .bed-info-icon {
+
+  }
+  
+  .room-info__h5 {
+    font-size: 1.5rem;
+    margin-top: .3rem;
+  }
 `
