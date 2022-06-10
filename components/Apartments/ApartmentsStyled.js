@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const ApartmentsStyled = styled.main`
   width: 100%;
-  height: 20rem;
   padding: 0 clamp(1rem, 3vw, 4rem);
   display: flex;
   flex-direction: column;
