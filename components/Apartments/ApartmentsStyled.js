@@ -19,8 +19,4 @@ export const ApartmentsStyled = styled.main`
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     grid-gap: 4rem 2rem;
   }
-  
-  .box {
-    background-color: beige;
-  }
 `
