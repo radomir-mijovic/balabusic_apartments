@@ -46,6 +46,7 @@ export const HouseRulesStyled = styled.section`
   }
   
   @media (max-width: 756px) {
+    margin-bottom: 8rem;
     
     .main-box {
       padding: 1rem;
