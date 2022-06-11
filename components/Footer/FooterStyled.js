@@ -2,33 +2,56 @@ import styled from "styled-components";
 
 export const FooterStyled = styled.footer`
   width: 100%;
-  height: 50rem;
-  padding: 5rem clamp(1rem, 3vw, 4rem);
-  background: red;
+  padding: 7rem clamp(1rem, 3vw, 4rem);
+  position: relative;
   
   .section-info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    
     width: 100%;
-    //align-items: center;
-    justify-items: center;
   }
   
   .section__h3 {
     font-size: clamp(2rem, 3.3vw, 3.3rem);
     text-align: center;
+    margin-bottom: 1.5rem;
   }
   
   .section__p {
-    font-size: clamp(1.4rem, 2.3vw, 2rem);
+    font-size: clamp(1.5rem, 2vw, 2rem);
     text-align: center;
   }
   
+  .show-on-map {
+    text-align: center;
+    margin-top: 3rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+  }
+  
+  .rights {
+    position: absolute;
+    bottom: .5rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
   @media (max-width: 768px) {
+    padding-top: 2rem;
     
     .section-info {
-      display: flex;
-      flex-direction: column;
+      grid-template-columns: 1fr;
+      row-gap: 3rem;
     }
+    
+    .show-on-map {
+      margin-top: 1.5rem;
+    }
+  }
+  
+  .section__h3 {
+    margin-bottom: .7rem;
   }
 `
