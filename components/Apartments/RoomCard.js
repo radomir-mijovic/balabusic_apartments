@@ -1,8 +1,13 @@
 import React from 'react';
 import {RoomCardStyled} from "./RoomCardStyled";
 import Image from 'next/image'
+import {ButtonBlueStyled} from "../UI/Button/ButtonBlueStyled";
+import {useRouter} from "next/router";
 
 const RoomCard = ({name, price, people, beds, alt}) => {
+    const router = useRouter()
+    const booking_link = 'https://www.booking.com/hotel/me/apartments-balabusic.sr.html'
+
     return (
         <RoomCardStyled>
             <div className="room-image">
@@ -30,6 +35,11 @@ const RoomCard = ({name, price, people, beds, alt}) => {
                         <Image src='/icons/bed.svg' alt="people" width='20' height='20'/>
                         <h5 className="room-info__h5">{beds} Beds</h5>
                     </div>
+                    <ButtonBlueStyled
+                        whileTap={{scale: .9}}
+                        onClick={() => router.push(booking_link)}>
+                        Book now
+                    </ButtonBlueStyled>
                 </div>
             </div>
         </RoomCardStyled>

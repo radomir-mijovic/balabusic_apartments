@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const RoomCardStyled = styled.div`
   width: 100%;
-  height: 30rem;
+  height: 33rem;
   display: flex;
   flex-direction: column;
   border-radius: 15px;
@@ -51,7 +51,8 @@ export const RoomCardStyled = styled.div`
   .room-info {
     display: flex;
     align-items: center;
-    width: 60%;
+    justify-content: space-between;
+    width: 100%;
     font-size: 1.6rem;
     height: 2.5rem;
   }
@@ -60,15 +61,13 @@ export const RoomCardStyled = styled.div`
   .bed-info-icon {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
     position: relative;
     height: 100%;
-    width: 100%;
     padding: 0 0.5rem;
   }
   
   .people-info-icon {
-    
+
   }
   
   .bed-info-icon {
@@ -78,5 +77,6 @@ export const RoomCardStyled = styled.div`
   .room-info__h5 {
     font-size: 1.5rem;
     margin-top: .3rem;
+    margin-left: .8rem;
   }
 `

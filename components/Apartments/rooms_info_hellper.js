@@ -1,7 +1,7 @@
 export const rooms_info_hellper = [
     {
         id: 1,
-        name: 'Bed in 6-Bed Room with Shared Bathroom',
+        name: 'Bed in 6-Bed Room with Bathroom',
         imageSrc: '',
         people: 6,
         beds: 3,
@@ -10,7 +10,7 @@ export const rooms_info_hellper = [
     },
     {
         id: 2,
-        name: 'Bed in 6-Bed Room with Shared Bathroom',
+        name: 'Bed in 6-Bed Room with Bathroom',
         imageSrc: '',
         people: 6,
         beds: 3,
@@ -19,7 +19,7 @@ export const rooms_info_hellper = [
     },
     {
         id: 3,
-        name: 'Bed in 6-Bed Room with Shared Bathroom',
+        name: 'Bed in 6-Bed Room with Bathroom',
         imageSrc: '',
         people: 8,
         beds: 4,
