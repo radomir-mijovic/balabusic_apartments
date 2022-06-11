@@ -6,7 +6,9 @@ import {rooms_info_hellper} from "./rooms_info_hellper";
 const Apartments = () => {
     return (
         <ApartmentsStyled>
-            <h2>Our Apartments</h2>
+            <div className="header-section">
+                <h2>Our Apartments</h2>
+            </div>
             <div className="boxes-grid">
                 {rooms_info_hellper.map((room, index) => {
                     return (
