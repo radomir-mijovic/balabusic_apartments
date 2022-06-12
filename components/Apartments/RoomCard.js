@@ -10,9 +10,10 @@ const RoomCard = ({name, price, people, beds, alt}) => {
 
     return (
         <RoomCardStyled
-            whileInView={{opacity: 1, y: 0}}
-            transition={{duration: 1}}
-            viewport={{ once: true }}
+            whileTap={{scale: .95}}
+            whileHover={{scale: 1.05, transition: {duration: .4}}}
+            whileInView={{opacity: 1, y: 0, transition: {duration: 1}}}
+            viewport={{once: true}}
             initial={{opacity: 0, y: 100}}>
             <div className="room-image">
                 <Image

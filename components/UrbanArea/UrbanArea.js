@@ -6,15 +6,15 @@ const UrbanArea = () => {
     return (
         <UrbanAreaStyled>
             <motion.h2
-                whileInView={{opacity: 1, y: 0, delay: .5}}
-                transition={{duration: .7}}
+                whileInView={{opacity: 1, y: 0}}
+                transition={{duration: .7, delay: .5}}
                 viewport={{once: true}}
                 initial={{opacity: 0, y: 60}}>
                 Urban Spirit of Budva
             </motion.h2>
             <motion.h4
-                whileInView={{opacity: 1, scale: 1, delay: .5}}
-                transition={{duration: 1}}
+                whileInView={{opacity: 1, scale: 1}}
+                transition={{duration: 1, delay: .5}}
                 viewport={{once: true}}
                 initial={{opacity: 0, scale: 0}}>
                 Apartments Balabusic are not designed as
