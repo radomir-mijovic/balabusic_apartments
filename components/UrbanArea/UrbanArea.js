@@ -6,14 +6,16 @@ const UrbanArea = () => {
     return (
         <UrbanAreaStyled>
             <motion.h2
-                animate={{opacity: 1, y: 0}}
+                whileInView={{opacity: 1, y: 0, delay: .5}}
                 transition={{duration: .7}}
+                viewport={{once: true}}
                 initial={{opacity: 0, y: 60}}>
                 Urban Spirit of Budva
             </motion.h2>
             <motion.h4
-                animate={{opacity: 1, scale: 1}}
+                whileInView={{opacity: 1, scale: 1, delay: .5}}
                 transition={{duration: 1}}
+                viewport={{once: true}}
                 initial={{opacity: 0, scale: 0}}>
                 Apartments Balabusic are not designed as
                 simple accommodation for travelers but is
