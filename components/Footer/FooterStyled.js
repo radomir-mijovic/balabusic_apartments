@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FooterStyled = styled.footer`
   width: 100%;
-  padding: 7rem clamp(1rem, 3vw, 4rem);
+  padding: 7rem 20vw;
   position: relative;
   
   .section-info {
@@ -36,6 +36,10 @@ export const FooterStyled = styled.footer`
     width: 100%;
     text-align: center;
     font-size: 1.2rem;
+  }
+  
+  @media (max-width: 1200px) {
+    padding: 7rem clamp(1rem, 3vw, 4rem);
   }
   
   @media (max-width: 768px) {
