@@ -9,7 +9,11 @@ const RoomCard = ({name, price, people, beds, alt}) => {
     const booking_link = 'https://www.booking.com/hotel/me/apartments-balabusic.sr.html'
 
     return (
-        <RoomCardStyled>
+        <RoomCardStyled
+            whileInView={{opacity: 1, y: 0}}
+            transition={{duration: 1}}
+            viewport={{ once: true }}
+            initial={{opacity: 0, y: 100}}>
             <div className="room-image">
                 <Image
                     src='/images/room4.jpg'

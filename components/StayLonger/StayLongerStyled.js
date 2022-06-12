@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import {motion} from "framer-motion";
 
-export const StayLongerStyled = styled.section`
+export const StayLongerStyled = styled(motion.section)`
   width: 100%;
   padding: 0 20vw;
   

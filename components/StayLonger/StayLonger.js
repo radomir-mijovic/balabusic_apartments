@@ -5,7 +5,11 @@ const StayLonger = () => {
     const simple = 'It\'s simple: the longer you stay, the more you save!'
 
     return (
-        <StayLongerStyled>
+        <StayLongerStyled
+            whileInView={{scale: 1}}
+            transition={{duration: .7}}
+            viewport={{ once: true }}
+            initial={{scale: 0}}>
             <div className="inner-box">
                 <h2>
                     Stay Longer,<br/> Save More

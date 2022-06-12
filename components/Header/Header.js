@@ -1,22 +1,31 @@
 import React from 'react';
 import Image from "next/image";
 import {HeaderStyled} from "./HeaderStyled";
+import {motion} from "framer-motion";
 
 const Header = () => {
     return (
         <HeaderStyled>
-            <div className="header-text-box">
+            <motion.div
+                animate={{opacity: 1, x: 1}}
+                transition={{duration: .5}}
+                initial={{opacity: 0, x: -50}}
+                className="header-text-box">
                 <h1>Balabusic Apartments</h1>
                 <h2>amazing apartments for<br/> the free spirited traveler</h2>
-            </div>
-            <div className="header-image-box">
+            </motion.div>
+            <motion.div
+                animate={{opacity: 1, x: 1}}
+                transition={{duration: .5}}
+                initial={{opacity: 0, x: 50}}
+                className="header-image-box">
                 <Image
                     src='/images/hotel1.jpg'
                     width='500' height='500'
                     objectFit="cover"
                     layout='fill'
                     alt='cover-img'/>
-            </div>
+            </motion.div>
         </HeaderStyled>
     );
 };
