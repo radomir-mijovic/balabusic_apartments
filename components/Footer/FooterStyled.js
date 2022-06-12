@@ -54,4 +54,8 @@ export const FooterStyled = styled.footer`
   .section__h3 {
     margin-bottom: .7rem;
   }
+  
+  .section__p {
+    line-height: 2.2rem;
+  }
 `
