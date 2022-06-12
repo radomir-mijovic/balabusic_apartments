@@ -9,7 +9,7 @@ export const HouseRulesStyled = styled.section`
   
   .main-box {
     position: relative;
-    width: 60%;
+    width: 80%;
     height: 80%;
   }
   
