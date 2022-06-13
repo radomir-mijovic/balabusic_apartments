@@ -6,8 +6,15 @@ export const NavbarStyled = styled.nav`
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
   width: 100%;
+  height: 8rem;
   padding: 2rem clamp(1rem, 3vw, 8rem);
   margin-bottom: clamp(.5rem, 4vw, 7rem);
+  
+  .image-box {
+    position: relative;
+    width: 25rem;
+    height: 100%;
+  }
   
   > h3, h1 {
     font-family: 'Josefin Sans', sans-serif;
@@ -22,7 +29,17 @@ export const NavbarStyled = styled.nav`
     font-size: clamp(1.2rem, 2vw, 1.4rem);
   }
   
-  @media(max-width: 768px) {
+  @media(max-width: 950px) {
     
+    .image-box {
+      width: 15rem;
+    }
+  }
+  
+  @media(max-width: 768px) {
+
+    .image-box {
+      width: 10rem;
+    }
   }
 `

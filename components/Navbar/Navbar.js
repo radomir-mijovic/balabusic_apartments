@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import {NavbarStyled} from "./NavbarStyled";
 import axios from "axios";
+import Image from "next/image";
+import {motion} from "framer-motion";
 
 const Navbar = () => {
     const [temp, setTemp] = useState(0)
@@ -14,7 +16,13 @@ const Navbar = () => {
     return (
         <NavbarStyled>
             <h3>Budva {temp.toFixed(0)}°C</h3>
-            <h1>Balabusic</h1>
+            <motion.div
+                animate={{opacity: 1}}
+                transition={{duration: .4}}
+                initial={{opacity: 0}}
+                className="image-box">
+                <Image src='/logo.png' alt='logo' layout='fill'/>
+            </motion.div>
             <h3>info@balabusic.com</h3>
         </NavbarStyled>
     );
