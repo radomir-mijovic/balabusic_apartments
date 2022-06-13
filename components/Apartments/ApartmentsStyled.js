@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ApartmentsStyled = styled.section`
   width: 100%;
-  padding: 0 25vw;
+  padding: 0 8vw;
   display: flex;
   flex-direction: column;
   
@@ -22,12 +22,12 @@ export const ApartmentsStyled = styled.section`
   
   .boxes-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 4rem 2rem;
     
   }
 
-  @media (max-width: 850px) {
+  @media (max-width: 1200px) {
     padding: 0 clamp(1rem, 3vw, 4rem);
     
     .boxes-grid {

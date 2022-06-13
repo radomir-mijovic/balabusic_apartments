@@ -3,6 +3,7 @@ import {RoomCardStyled} from "./RoomCardStyled";
 import Image from 'next/image'
 import {ButtonBlueStyled} from "../UI/Button/ButtonBlueStyled";
 import {useRouter} from "next/router";
+import {motion} from "framer-motion";
 
 const RoomCard = ({name, price, people, beds, alt}) => {
     const router = useRouter()
@@ -10,12 +11,13 @@ const RoomCard = ({name, price, people, beds, alt}) => {
 
     return (
         <RoomCardStyled
-            whileTap={{scale: .95}}
-            whileHover={{scale: 1.05, transition: {duration: .4}}}
             whileInView={{opacity: 1, y: 0, transition: {duration: 1}}}
             viewport={{once: true}}
             initial={{opacity: 0, y: 100}}>
-            <div className="room-image">
+            <motion.div
+                whileTap={{scale: .95}}
+                whileHover={{scale: 1.05, transition: {duration: .4}}}
+                className="room-image">
                 <Image
                     src='/images/room4.jpg'
                     alt={alt}
@@ -26,7 +28,7 @@ const RoomCard = ({name, price, people, beds, alt}) => {
                 <div className="price">
                     €{price} / <span> 1 night</span>
                 </div>
-            </div>
+            </motion.div>
             <div className="info">
                 <div className="room-name">
                     {name}
@@ -41,6 +43,8 @@ const RoomCard = ({name, price, people, beds, alt}) => {
                         <h5 className="room-info__h5">{beds} Beds</h5>
                     </div>
                     <ButtonBlueStyled
+                        whileHover={{y: -5, scale: 1.03}}
+                        transition={{duration: .4}}
                         whileTap={{scale: .9}}
                         onClick={() => router.push(booking_link)}>
                         Book now
