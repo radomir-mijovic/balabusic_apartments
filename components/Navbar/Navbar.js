@@ -7,11 +7,11 @@ import {motion} from "framer-motion";
 const Navbar = () => {
     const [temp, setTemp] = useState(0)
 
-    // axios.get(
-    //     'https://api.openweathermap.org/data/2.5/weather?q=budva&units=metric&appid=cb5ff894f1a8e61d7e596c67a671568f'
-    // ).then((response) => {
-    //     setTemp(response.data.main.temp)
-    // })
+    axios.get(
+        'https://api.openweathermap.org/data/2.5/weather?q=budva&units=metric&appid={process.env.open_weather_key}'
+    ).then((response) => {
+        setTemp(response.data.main.temp)
+    })
 
     return (
         <NavbarStyled>

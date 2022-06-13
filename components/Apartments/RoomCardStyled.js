@@ -12,6 +12,7 @@ export const RoomCardStyled = styled(motion.div)`
   .room-image {
     height: 70%;
     position: relative;
+    cursor: pointer;
   }
   
   .price {
