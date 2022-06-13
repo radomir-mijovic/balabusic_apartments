@@ -7,7 +7,7 @@ const StayLonger = () => {
     return (
         <StayLongerStyled
             whileInView={{scale: 1}}
-            transition={{duration: .7, type: 'spring'}}
+            transition={{duration: .7, type: 'spring', delay: 1}}
             viewport={{ once: true }}
             initial={{scale: 0}}>
             <div className="inner-box">
