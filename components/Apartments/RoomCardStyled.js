@@ -3,7 +3,7 @@ import {motion} from "framer-motion";
 
 export const RoomCardStyled = styled(motion.div)`
   width: 100%;
-  height: 33rem;
+  height: 50rem;
   display: flex;
   flex-direction: column;
   border-radius: 15px;
@@ -79,5 +79,9 @@ export const RoomCardStyled = styled(motion.div)`
     font-size: 1.5rem;
     margin-top: .3rem;
     margin-left: .8rem;
+  }
+  
+  @media (max-width: 850px) {
+    height: 35rem;
   }
 `
