@@ -1,17 +1,30 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {NavbarStyled} from "./NavbarStyled";
 import axios from "axios";
 import Image from "next/image";
 import {motion} from "framer-motion";
+import axiosInstance from "../../axios";
 
 const Navbar = () => {
     const [temp, setTemp] = useState(0)
 
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=budva&units=metric&appid=${process.env.OPEN_WEATHER_API_KEY}`
-
-    axios.get(url).then((response) => {
+    axios.get('https://api.openweathermap.org/data/2.5/weather?q=budva&units=metric&appid=cb5ff894f1a8e61d7e596c67a671568f').then((response) => {
         setTemp(response.data.main.temp)
+        console.log(response)
     })
+
+
+    // axiosInstance.get().then((response) => {
+    //     setTemp(response.data.main.temp)
+    // })
+
+
+
+    // fetch(process.env.OPEN_WEATHER_API_KEY).then(response => response.json()).then(result => {
+    //     // setTemp(result.data.main.temp)
+    //     console.log(result.main.temp)
+    //     setTemp(result.main.temp)
+    // }).catch(err => console.log(err))
 
     return (
         <NavbarStyled>
