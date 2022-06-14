@@ -7,9 +7,9 @@ import {motion} from "framer-motion";
 const Navbar = () => {
     const [temp, setTemp] = useState(0)
 
-    axios.get(
-        `https://api.openweathermap.org/data/2.5/weather?q=budva&units=metric&appid=${process.env.open_weather_key}`
-    ).then((response) => {
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=budva&units=metric&appid=${process.env.OPEN_WEATHER_API_KEY}`
+
+    axios.get(url).then((response) => {
         setTemp(response.data.main.temp)
     })
 
