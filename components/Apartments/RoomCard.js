@@ -5,7 +5,7 @@ import {ButtonBlueStyled} from "../UI/Button/ButtonBlueStyled";
 import {useRouter} from "next/router";
 import {motion} from "framer-motion";
 
-const RoomCard = ({name, price, people, beds, alt}) => {
+const RoomCard = ({name, price, people, beds, alt, imageSrc}) => {
     const router = useRouter()
     const booking_link = 'https://www.booking.com/hotel/me/apartments-balabusic.sr.html'
 
@@ -19,7 +19,7 @@ const RoomCard = ({name, price, people, beds, alt}) => {
                 whileHover={{scale: 1.05, transition: {duration: .4}}}
                 className="room-image">
                 <Image
-                    src='/images/room4.jpg'
+                    src={imageSrc}
                     alt={alt}
                     width='100'
                     height='200'

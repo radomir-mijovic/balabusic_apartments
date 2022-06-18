@@ -2,7 +2,7 @@ export const rooms_info_hellper = [
     {
         id: 1,
         name: 'Bed in 6-Bed Room with Bathroom',
-        imageSrc: '',
+        imageSrc: '/images/condo.jpg',
         people: 6,
         beds: 3,
         price: 33,
@@ -11,7 +11,7 @@ export const rooms_info_hellper = [
     {
         id: 2,
         name: 'Bed in 6-Bed Room with Bathroom',
-        imageSrc: '',
+        imageSrc: '/images/app1.jpg',
         people: 6,
         beds: 3,
         price: 44,
@@ -20,7 +20,7 @@ export const rooms_info_hellper = [
     {
         id: 3,
         name: 'Bed in 6-Bed Room with Bathroom',
-        imageSrc: '',
+        imageSrc: '/images/app2.jpg',
         people: 8,
         beds: 4,
         price: 33,
@@ -29,7 +29,7 @@ export const rooms_info_hellper = [
     {
         id: 4,
         name: 'Double Room with Private Bathroom',
-        imageSrc: '',
+        imageSrc: '/images/app4.jpg',
         people: 5,
         beds: 3,
         price: 23,
@@ -38,7 +38,7 @@ export const rooms_info_hellper = [
     {
         id: 5,
         name: 'Double Room with Private Bathroom',
-        imageSrc: '',
+        imageSrc: '/images/app5.jpg',
         people: 4,
         beds: 3,
         price: 33,
@@ -47,7 +47,7 @@ export const rooms_info_hellper = [
     {
         id: 6,
         name: 'Double Room with Private Bathroom',
-        imageSrc: '',
+        imageSrc: '/images/app6.jpg',
         people: 4,
         beds: 3,
         price: 22,
@@ -56,7 +56,7 @@ export const rooms_info_hellper = [
     {
         id: 7,
         name: 'Double Room with Private Bathroom',
-        imageSrc: '',
+        imageSrc: '/images/app7.jpg',
         people: 4,
         beds: 2,
         price: 22,
@@ -65,7 +65,7 @@ export const rooms_info_hellper = [
     {
         id: 8,
         name: 'Double Room with Private Bathroom',
-        imageSrc: '',
+        imageSrc: '/images/app8.jpg',
         people: 4,
         beds: 2,
         price: 22,
@@ -74,7 +74,7 @@ export const rooms_info_hellper = [
     {
         id: 9,
         name: 'Double Room with Private Bathroom',
-        imageSrc: '',
+        imageSrc: '/images/room.JPG',
         people: 4,
         beds: 2,
         price: 22,
