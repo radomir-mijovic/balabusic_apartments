@@ -23,7 +23,6 @@ const Header = () => {
                 className="header-image-box">
                 <Image
                     src={mainImg}
-                    width='500' height='500'
                     objectFit="cover"
                     layout='fill'
                     alt='cover-img'/>

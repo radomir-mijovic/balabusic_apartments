@@ -7,7 +7,7 @@ export const rooms_info_hellper = [
         beds: 3,
         price: 44,
         alt: 'Balabusic room image',
-        type: "Apartment /No 1",
+        type: "1. Apartment",
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ export const rooms_info_hellper = [
         beds: 2,
         price: 33,
         alt: 'Balabusic room image',
-        type: "Apartment /No 2",
+        type: "2. Apartment",
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ export const rooms_info_hellper = [
         beds: 2,
         price: 22,
         alt: 'Balabusic room image',
-        type: "Studio /No 3",
+        type: "3. Studio",
     },
     {
         id: 4,
@@ -37,7 +37,7 @@ export const rooms_info_hellper = [
         beds: 1,
         price: 22,
         alt: 'Balabusic room image',
-        type: "Studio /No 4",
+        type: "4. Studio",
     },
     {
         id: 5,
@@ -47,7 +47,7 @@ export const rooms_info_hellper = [
         beds: 3,
         price: 33,
         alt: 'Balabusic room image',
-        type: "Apartment /No 5",
+        type: "5. Apartment",
     },
     {
         id: 6,
@@ -57,7 +57,7 @@ export const rooms_info_hellper = [
         beds: 3,
         price: 22,
         alt: 'Balabusic room image',
-        type: "Apartment /No 6",
+        type: "6. Apartment",
     },
     {
         id: 7,
@@ -67,7 +67,7 @@ export const rooms_info_hellper = [
         beds: 2,
         price: 23,
         alt: 'Balabusic room image',
-        type: "Studio /No 7",
+        type: "7. Studio",
     },
     {
         id: 8,
@@ -77,7 +77,7 @@ export const rooms_info_hellper = [
         beds: 3,
         price: 22,
         alt: 'Balabusic room image',
-        type: "Apartment /No 8",
+        type: "8. Apartment",
     },
     {
         id: 9,
@@ -87,6 +87,6 @@ export const rooms_info_hellper = [
         beds: 3,
         price: 33,
         alt: 'Balabusic room image',
-        type: "Apartment /No 9",
+        type: "9. Apartment",
     },
 ]
