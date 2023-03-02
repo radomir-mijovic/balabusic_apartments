@@ -19,7 +19,7 @@ export const RoomCardStyled = styled(motion.div)`
     z-index: 3;
     position: absolute;
     background: white;
-    width: 15rem;
+    width: 17rem;
     height: 3.5rem;
     right: 0;
     bottom: 2rem;
@@ -27,9 +27,8 @@ export const RoomCardStyled = styled(motion.div)`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.3rem;
+    font-size: 1.8rem;
     font-weight: 600;
-    font-family: 'Cormorant', serif;
     
     > span {
       font-weight: 300;

@@ -25,7 +25,7 @@ const HouseRules = () => {
                     viewport={{once: true}}
                     className="house-rules-box">
                     <h3>House Rules</h3>
-                    <h4>Check-in is anytime after 2PM and check out by 11AM.
+                    <h4>Check-in is anytime after 12PM and check out by 10AM.
                         We can store your luggage for a few days </h4>
                 </motion.div>
             </div>

@@ -2,13 +2,9 @@ import React from 'react';
 import {RoomCardStyled} from "./RoomCardStyled";
 import Image from 'next/image'
 import {ButtonBlueStyled} from "../UI/Button/ButtonBlueStyled";
-import {useRouter} from "next/router";
 import {motion} from "framer-motion";
 
-const RoomCard = ({name, price, people, beds, alt, imageSrc}) => {
-    const router = useRouter()
-    const booking_link = 'https://www.booking.com/hotel/me/apartments-balabusic.sr.html'
-
+const RoomCard = ({name, people, beds, alt, imageSrc, type}) => {
     return (
         <RoomCardStyled
             whileInView={{opacity: 1, y: 0, transition: {duration: 1}}}
@@ -21,12 +17,10 @@ const RoomCard = ({name, price, people, beds, alt, imageSrc}) => {
                 <Image
                     src={imageSrc}
                     alt={alt}
-                    width='100'
-                    height='200'
                     layout='fill'
                     objectFit='cover'/>
                 <div className="price">
-                    €{price} / <span> 1 night</span>
+                    {type}
                 </div>
             </motion.div>
             <div className="info">
@@ -45,9 +39,11 @@ const RoomCard = ({name, price, people, beds, alt, imageSrc}) => {
                     <ButtonBlueStyled
                         whileHover={{y: -5, scale: 1.03}}
                         transition={{duration: .4}}
-                        whileTap={{scale: .9}}
-                        onClick={() => router.push(booking_link)}>
-                        Book now
+                        whileTap={{scale: .9}}>
+                        <a style={{textDecoration: "none", color: "black"}}
+                            href="tel:+382 69 620 216">
+                            Book Now
+                        </a>
                     </ButtonBlueStyled>
                 </div>
             </div>

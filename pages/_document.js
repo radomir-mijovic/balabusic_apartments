@@ -7,16 +7,9 @@ class MyDocument extends Document {
         return (
             <Html lang='en'>
                 <Head>
-                    {/*<link rel="shortcut icon" href="/assets/logo/rakia.svg"/>*/}
-                    {/*<link rel="canonical" href="https://www.rakiaandwinebar.com/"/>*/}
-                    {/*<link rel="preconnect" href="https://fonts.googleapis.com"/>*/}
-                    {/*<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>*/}
-
-                    <meta name="keywords" content="apartments, balabusic, budva, apartmani, smjestaj"/>
+                    <meta name="keywords" content="apartments, balabusic, budva, apartmani, smjestaj, apartments budva, apartments"/>
                     <meta name='description'
-                          content='Discover a dreamy spot in the heart of Old
-                                   Town Budva and create authentic memories with us. Rakija and Wine bar
-                                   - Budva. Rakija i Vino bar - Budva.'/>
+                          content='amazing apartments for the free spirited traveler.'/>
 
                     <link rel="preconnect" href="https://fonts.googleapis.com"/>
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>

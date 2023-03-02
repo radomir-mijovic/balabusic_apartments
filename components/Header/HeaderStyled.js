@@ -23,7 +23,6 @@ export const HeaderStyled = styled.section`
     
     > h1 {
       font-size: clamp(3rem, 4vw, 5rem);
-      margin-bottom: 1.7rem;
     }
     
     > h2 {
@@ -31,6 +30,12 @@ export const HeaderStyled = styled.section`
       font-size: clamp(1.6rem, 2.2vw, 2rem);
       line-height: 2.2rem;
       font-family: 'Cormorant', serif;
+      margin: 1.8rem 0;
+    }
+    
+    > p {
+      font-size: 1.5rem;
+      font-weight: 700;
     }
   }
   

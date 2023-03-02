@@ -23,12 +23,18 @@ const Footer = () => {
                     <p className='section__p'>
                         Address: Presernova 7, Budva
                     </p>
-                    <p className='section__p'>
-                        Phone: +382 67 431 105
-                    </p>
+                    <a style={{textDecoration: "none", color: "black"}}
+                       href="tel:+382 69 620 216">
+                        <p className='section__p'>
+                            Phone: +382 69 620 216
+                        </p>
+                    </a>
+                    <a style={{textDecoration: "none", color: "black"}}
+                       href="mailto: info@balabusic.com">
                     <p className='section__p'>
                         Email: info@balabusic.com
                     </p>
+                    </a>
                     <motion.h4
                         onClick={() => router.push(google_map_location)}
                         whileHover={{scale: 1.1}}
