@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { DotsWrapper, ImageModalStyled } from "./ImageModalStyled";
 import { useModalContext } from "../../context";
 import Image from "next/image";
+import closeSvg from "../../public/icons/x-close.svg";
 
 const ImageModal = () => {
   const { modalPosition, modalImages, setIsModal } = useModalContext();
@@ -9,13 +10,10 @@ const ImageModal = () => {
 
   const modalWrapperStyle = {
     top: modalPosition,
-    right: 0,
     position: "absolute",
     width: "100%",
     height: "110vh",
     zIndex: 200,
-    // display: "grid",
-    // placeItems: "center",
     display: "flex",
     alignItems: "center",
     flexDirection: "column",
@@ -28,21 +26,33 @@ const ImageModal = () => {
     height: 10,
     width: 10,
     borderRadius: "50%",
-    background: "white",
+    background: "#437097",
+    cursor: "pointer",
+    pointerEvents: "auto",
   };
 
   const BigDot = {
     height: 15,
-    width: 15,
-    borderRadius: "50%",
-    background: "white",
+    width: 20,
+    borderRadius: 10,
+    background: "#FFFFFF",
+  };
+
+  const closeSvgStyle = {
+    cursor: "pointer",
   };
 
   return (
-    <div onClick={() => setIsModal(false)} style={modalWrapperStyle}>
+    <div style={modalWrapperStyle}>
+      <Image
+        style={closeSvgStyle}
+        onClick={() => setIsModal(false)}
+        src={closeSvg}
+        alt={"close icon"}
+      />
       <ImageModalStyled>
         <Image
-          style={{ borderRadius: 3 }}
+          style={{ borderRadius: 3, objectFit: "cover" }}
           src={modalImages[imageIndex].src}
           layout={"fill"}
           alt={"room image"}

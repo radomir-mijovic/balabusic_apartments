@@ -82,10 +82,6 @@ export const rooms_info_hellper = [
     type: "2. Apartment",
     images: [
       {
-        id: 0,
-        src: "/images/app2/166729874.jpg",
-      },
-      {
         id: 1,
         src: "/images/app2/166729877.jpg",
       },

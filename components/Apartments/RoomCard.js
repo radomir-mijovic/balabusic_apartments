@@ -17,7 +17,6 @@ const RoomCard = ({ name, people, beds, alt, imageSrc, type, images }) => {
 
   return (
     <RoomCardStyled
-      onClick={modalHandler}
       whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
       viewport={{ once: true }}
       initial={{ opacity: 0, y: 100 }}
@@ -27,7 +26,13 @@ const RoomCard = ({ name, people, beds, alt, imageSrc, type, images }) => {
         whileHover={{ scale: 1.05, transition: { duration: 0.4 } }}
         className="room-image"
       >
-        <Image src={imageSrc} alt={alt} layout="fill" objectFit="cover" />
+        <Image
+          onClick={modalHandler}
+          src={imageSrc}
+          alt={alt}
+          layout="fill"
+          objectFit="cover"
+        />
         <div className="price">{type}</div>
       </motion.div>
       <div className="info">
