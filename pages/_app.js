@@ -5,9 +5,9 @@ import { ModalProvider } from "../context";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <GlobalStyles />
-      <Navbar />
       <ModalProvider>
+        <GlobalStyles />
+        <Navbar />
         <Component {...pageProps} />
       </ModalProvider>
     </>

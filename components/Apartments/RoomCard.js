@@ -6,8 +6,7 @@ import { motion } from "framer-motion";
 import { useModalContext } from "../../context";
 
 const RoomCard = ({ name, people, beds, alt, imageSrc, type, images }) => {
-  const { isModal, setIsModal, modalImages, setModalPosition, setModalImages } =
-    useModalContext();
+  const { setIsModal, setModalPosition, setModalImages } = useModalContext();
 
   const modalHandler = () => {
     setIsModal((prevState) => !prevState);
