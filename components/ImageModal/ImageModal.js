@@ -1,8 +1,17 @@
 import React, { useState } from "react";
-import { DotsWrapper, ImageModalStyled } from "./ImageModalStyled";
+import {
+  ArrowLeftWrapper,
+  ArrowRightWrapper,
+  CloseSvgWrapper,
+  DotsWrapper,
+  ImageModalStyled,
+  InnerWrapperStyled,
+} from "./ImageModalStyled";
 import { useModalContext } from "../../context";
 import Image from "next/image";
 import closeSvg from "../../public/icons/x-close.svg";
+import rightArrow from "../../public/icons/chevron-right.svg";
+import leftArrow from "../../public/icons/chevron-left.svg";
 
 const ImageModal = () => {
   const { modalPosition, modalImages, setIsModal } = useModalContext();
@@ -42,33 +51,56 @@ const ImageModal = () => {
     cursor: "pointer",
   };
 
+  const rightArrowHandler = () => {
+    modalImages.length === imageIndex + 1
+      ? setImageIndex(0)
+      : setImageIndex((prevState) => prevState + 1);
+  };
+
+  const leftArrowHandler = () => {
+    imageIndex === 0
+      ? setImageIndex(modalImages.length - 1)
+      : setImageIndex((prevState) => prevState - 1);
+  };
+
   return (
     <div style={modalWrapperStyle}>
-      <Image
-        style={closeSvgStyle}
-        onClick={() => setIsModal(false)}
-        src={closeSvg}
-        alt={"close icon"}
-      />
-      <ImageModalStyled>
-        <Image
-          style={{ borderRadius: 3, objectFit: "cover" }}
-          src={modalImages[imageIndex].src}
-          layout={"fill"}
-          alt={"room image"}
-        />
-      </ImageModalStyled>
-      <DotsWrapper>
-        {modalImages.map((image, index) => {
-          return (
-            <div
-              style={index === imageIndex ? BigDot : SmallDot}
-              key={index}
-              onClick={() => setImageIndex(index)}
-            />
-          );
-        })}
-      </DotsWrapper>
+      <ArrowRightWrapper onClick={rightArrowHandler}>
+        <Image layout={"fill"} src={rightArrow} alt={"right"} />
+      </ArrowRightWrapper>
+      <ArrowLeftWrapper onClick={leftArrowHandler}>
+        <Image layout={"fill"} src={leftArrow} alt={"right"} />
+      </ArrowLeftWrapper>
+      <InnerWrapperStyled>
+        <CloseSvgWrapper>
+          <Image
+            layout={"fill"}
+            style={closeSvgStyle}
+            onClick={() => setIsModal(false)}
+            src={closeSvg}
+            alt={"close icon"}
+          />
+        </CloseSvgWrapper>
+        <ImageModalStyled>
+          <Image
+            style={{ borderRadius: 3, objectFit: "cover" }}
+            src={modalImages[imageIndex].src}
+            layout={"fill"}
+            alt={"room image"}
+          />
+        </ImageModalStyled>
+        <DotsWrapper>
+          {modalImages.map((image, index) => {
+            return (
+              <div
+                style={index === imageIndex ? BigDot : SmallDot}
+                key={index}
+                onClick={() => setImageIndex(index)}
+              />
+            );
+          })}
+        </DotsWrapper>
+      </InnerWrapperStyled>
     </div>
   );
 };
