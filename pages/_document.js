@@ -19,7 +19,7 @@ class MyDocument extends Document {
           <meta property="og:title" content="Balabusic Apartments" />
           <meta
             property="og:description"
-            content="Amazing apartments for the free spirited traveler."
+            content="Amazing apartments for the free spirited traveler. Apartments Balabusic are not designed as simple accommodation for travelers but is designed to mix with space of modern and sensible design, culture, art and entertainment. One of our main goals is to make sure that your trip and experience is enjoyable."
           />
           <meta
             property="og:image"
