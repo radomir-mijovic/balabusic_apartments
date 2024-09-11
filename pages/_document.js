@@ -25,10 +25,7 @@ class MyDocument extends Document {
             property="og:image"
             content="https://www.balabusic.com/images/main_img2.jpg"
           />
-          <meta
-            property="og:url"
-            content="https://www.balabusic.com/images/main_img2.jpg"
-          />
+          <meta property="og:url" content="https://www.balabusic.com" />
 
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
