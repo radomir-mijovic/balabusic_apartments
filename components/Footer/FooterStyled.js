@@ -6,11 +6,11 @@ export const FooterStyled = styled.footer`
   position: relative;
   
   .section-info {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    
-    width: 100%;
-  }
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  width: 100%;
+}
   
   .section__h3 {
     font-size: clamp(2rem, 3.3vw, 3.3rem);
@@ -53,6 +53,9 @@ export const FooterStyled = styled.footer`
     .show-on-map {
       margin-top: 1.5rem;
     }
+      .map iframe {
+    min-height: 280px;
+  }
   }
   
   .section__h3 {
@@ -62,4 +65,10 @@ export const FooterStyled = styled.footer`
   .section__p {
     line-height: 2.2rem;
   }
+
+  .map iframe {
+  width: 100%;
+  min-height: 220px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
 `

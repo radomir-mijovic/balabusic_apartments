@@ -23,7 +23,7 @@ class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content="https://www.balabusic.com/images/main_img2.jpg"
+            content="https://www.balabusic.com/images/og-image.jpg"
           />
           <meta property="og:url" content="https://www.balabusic.com" />
 

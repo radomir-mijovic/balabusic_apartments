@@ -33,7 +33,12 @@ const Navbar = () => {
                 className="image-box">
                 <Image src='/logo.png' alt='logo' layout='fill'/>
             </motion.div>
-            <h3>info@balabusic.com</h3>
+            <a
+            style={{ textDecoration: "none", color: "black" }}
+            href="mailto: apartmanibalabusic@gmail.com"
+          >
+            <p className="section__p">Contact us Via E-Mail</p>
+          </a>
         </NavbarStyled>
     );
 };

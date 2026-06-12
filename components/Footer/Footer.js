@@ -30,9 +30,25 @@ const Footer = () => {
           </a>
           <a
             style={{ textDecoration: "none", color: "black" }}
-            href="mailto: info@balabusic.com"
+            href="mailto: apartmanibalabusic@gmail.com"
           >
-            <p className="section__p">Email: info@balabusic.com</p>
+            <p className="section__p">Email: apartmanibalabusic@gmail.com</p>
+          </a>
+          <a
+            style={{ textDecoration: "none", color: "black" }}
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p className="section__p">Instagram</p>
+          </a>
+           <a
+            style={{ textDecoration: "none", color: "black" }}
+            href="https://www.linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p className="section__p">LinkedIn</p>
           </a>
           <motion.h4
             onClick={() => router.push(google_map_location)}
@@ -50,6 +66,19 @@ const Footer = () => {
             Pay any way you choose, we support all payment options.
           </p>
         </div>
+
+        <div className="map">
+            <h3 className="section__h3">Location</h3>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2951.5186947012844!2d18.846914!3d42.2887965!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134dd5cb7cfd2a9d%3A0xba3acf5469ad1a69!2sApartments%20Balabusic!5e0!3m2!1sen!2srs!4v1781296624916!5m2!1sen!2srs"
+                  width="100%"
+                  height="220"
+                  style={{ border: 0, borderRadius: "12px" }}
+                  loading="lazy"
+                  allowFullScreen
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+          </div>
       </div>
       <div className="rights">Apartmani Balabusic. All rights reserved.</div>
     </FooterStyled>
