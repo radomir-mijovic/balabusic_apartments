@@ -71,4 +71,29 @@ export const FooterStyled = styled.footer`
   min-height: 220px;
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
 }
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+.socials svg {
+    width: 28px;
+    height: 28px;
+    transition: transform .2s ease, opacity .2s ease;
+  }
+
+  .socials a:hover svg {
+    transform: scale(1.15);
+    opacity: .7;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
 `
